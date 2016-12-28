@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - admin@localhost" uuid="8b1c9b74-9d71-4fae-84f3-4e3ea982b2b1">
+    <database-info product="MySQL" version="5.6.24" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="admin"/>
+    <table name="hibernate_sequences" schema="" catalog="admin" type="TABLE">
+      <column name="sequence_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="sequence_next_hi_value" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+    </table>
+    <table name="t_user" schema="" catalog="admin" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="user_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" remarks="55So5oi35ZCN"/>
+      <column name="user_phone" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="5omL5py65Y+3"/>
+      <column name="user_email" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" remarks="6YKu566x5Zyw5Z2A"/>
+      <column name="user_pwd" sqlType="VARCHAR" precision="32" scale="0" nullable="true" jdbcType="12" remarks="5Yqg55uQ5ZCO55So5oi35a+G56CB"/>
+      <column name="pwd_salt" sqlType="VARCHAR" precision="6" scale="0" nullable="true" jdbcType="12" remarks="TUQ155uQ"/>
+      <column name="create_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5Yib5bu65pe26Ze0"/>
+      <column name="modify_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93" remarks="5pyA5ZCO5L+u5pS55pe26Ze0"/>
+      <column name="is_delete" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6" remarks="5piv5ZCm5Yig6Zmk77yMMC3mnKrliKDpmaTvvJsxLeW3suWIoOmZpA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="useraccount" schema="" catalog="admin" type="TABLE">
+      <column name="userid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="username" sqlType="VARCHAR" precision="8" scale="0" nullable="true" jdbcType="12"/>
+      <column name="userpwd" sqlType="VARCHAR" precision="8" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="userid"/>
+    </table>
+  </data-source>
+</component>
